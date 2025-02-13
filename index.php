@@ -66,23 +66,41 @@
 // Traccia 4
 
 
-$users = [
-    ['name' => 'Davide', 'surname' => 'Cariola', 'gender' => 'M'], 
-    ['name' => 'Davida', 'surname' => 'Carli', 'gender' => 'F'], 
-    ['name' => 'Dado', 'surname' => 'Cala', 'gender' => 'M'], 
-    ['name' => 'Maria', 'surname' => 'Rossi', 'gender' => 'F'],
-    ['name' => 'Gigi', 'surname' => 'Proietti', 'gender' => 'NB'], ];
-$female="Sig.ra ";
-$male="Sig. ";
-$fluid="Sig* ";
-    foreach($users as $user){
+// $users = [
+//     ['name' => 'Davide', 'surname' => 'Cariola', 'gender' => 'M'], 
+//     ['name' => 'Davida', 'surname' => 'Carli', 'gender' => 'F'], 
+//     ['name' => 'Dado', 'surname' => 'Cala', 'gender' => 'M'], 
+//     ['name' => 'Maria', 'surname' => 'Rossi', 'gender' => 'F'],
+//     ['name' => 'Gigi', 'surname' => 'Proietti', 'gender' => 'NB'], ];
+// $female="Sig.ra ";
+// $male="Sig. ";
+// $fluid="Sig* ";
+//     foreach($users as $user){
 
-        if( $user["gender"]=="M"){
-        echo("Buongiorno $male$user[name] $user[surname]\n");
+//         if( $user["gender"]=="M"){
+//         echo("Buongiorno $male$user[name] $user[surname]\n");
 
-    } elseif($user["gender"]=="F"){
-        echo("Buongiorno $female$user[name] $user[surname]\n"); 
-    }else{
-        echo("Buongiorno $fluid$user[name] $user[surname]");
-    }
+//     } elseif($user["gender"]=="F"){
+//         echo("Buongiorno $female$user[name] $user[surname]\n"); 
+//     }else{
+//         echo("Buongiorno $fluid$user[name] $user[surname]");
+//     }
+// };
+
+
+// Traccia 5
+// Dato un array di numeri a scelta, scrivere un programma che calcoli la media solo dei numeri pari contenuti all’interno dell’array
+$numbers = [56,59,45,12,31,22,20,4,3,73,80,57,1,13,50,17,18];
+
+for ($i = 0; $i < count($numbers); $i++) {
+   if ($numbers[$i] % 2 == 0) {
+       $result[] = $numbers[$i];
+      
+   }
+   $media=array_sum($result)/count($result);
+   $media = array_sum($result) / count($result);
+
+ 
 };
+var_dump(round($media));
+
