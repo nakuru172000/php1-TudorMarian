@@ -38,27 +38,51 @@
 
 // Traccia 3
 
-$words1 = [
-    'vostro', 67, 'essere', 'colle', 'mi', 'sempre', [
-        'oscura', 'era', 89, ['mezzo', 'E'],
-        'ritrovai', 'per'
-    ],
-    'diritta'
-];
-$words2 = [
-    'elemento1' => 25.89,
-    'elemento2' => 'possa',
-    'elemento3' => [
-        'Virgilio',
-        'Favore',
-        'favore',
-        ['Fortuna']
-    ],
-    'fine'=>'!'
-];
-$space=" ";
-$la="la";
-$a="a";
+// $words1 = [
+//     'vostro', 67, 'essere', 'colle', 'mi', 'sempre', [
+//         'oscura', 'era', 89, ['mezzo', 'E'],
+//         'ritrovai', 'per'
+//     ],
+//     'diritta'
+// ];
+// $words2 = [
+//     'elemento1' => 25.89,
+//     'elemento2' => 'possa',
+//     'elemento3' => [
+//         'Virgilio',
+//         'Favore',
+//         'favore',
+//         ['Fortuna']
+//     ],
+//     'fine'=>'!'
+// ];
+// $space=" ";
+// $la="la";
+// $a="a";
 
-$results=$words1[6][3][1].$space.$words2['elemento2'].$space.$la.$space.$words2["elemento3"][3][0].$space.$words1[2] .$space.$words1[5].$space.$a.$space.$words1[0].$space.$words2["elemento3"][2].$words2["fine"]   ;
-echo($results)                                               ;
+// $results=$words1[6][3][1].$space.$words2['elemento2'].$space.$la.$space.$words2["elemento3"][3][0].$space.$words1[2] .$space.$words1[5].$space.$a.$space.$words1[0].$space.$words2["elemento3"][2].$words2["fine"]   ;
+// echo($results)                                               ;
+
+// Traccia 4
+
+
+$users = [
+    ['name' => 'Davide', 'surname' => 'Cariola', 'gender' => 'M'], 
+    ['name' => 'Davida', 'surname' => 'Carli', 'gender' => 'F'], 
+    ['name' => 'Dado', 'surname' => 'Cala', 'gender' => 'M'], 
+    ['name' => 'Maria', 'surname' => 'Rossi', 'gender' => 'F'],
+    ['name' => 'Gigi', 'surname' => 'Proietti', 'gender' => 'NB'], ];
+$female="Sig.ra ";
+$male="Sig. ";
+$fluid="Sig* ";
+    foreach($users as $user){
+
+        if( $user["gender"]=="M"){
+        echo("Buongiorno $male$user[name] $user[surname]\n");
+
+    } elseif($user["gender"]=="F"){
+        echo("Buongiorno $female$user[name] $user[surname]\n"); 
+    }else{
+        echo("Buongiorno $fluid$user[name] $user[surname]");
+    }
+};
