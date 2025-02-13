@@ -90,17 +90,39 @@
 
 // Traccia 5
 // Dato un array di numeri a scelta, scrivere un programma che calcoli la media solo dei numeri pari contenuti all’interno dell’array
-$numbers = [56,59,45,12,31,22,20,4,3,73,80,57,1,13,50,17,18];
+// $numbers = [56,59,45,12,31,22,20,4,3,73,80,57,1,13,50,17,18];
 
-for ($i = 0; $i < count($numbers); $i++) {
-   if ($numbers[$i] % 2 == 0) {
-       $result[] = $numbers[$i];
+// for ($i = 0; $i < count($numbers); $i++) {
+//    if ($numbers[$i] % 2 == 0) {
+//        $result[] = $numbers[$i];
       
-   }
-   $media=array_sum($result)/count($result);
-   $media = array_sum($result) / count($result);
+//    }
+//    $media=array_sum($result)/count($result);
+//    $media = array_sum($result) / count($result);
 
  
-};
-var_dump(round($media));
+// };
+// var_dump(round($media));
+// $i = 1;
+// while ($i <= 100) {
+//     echo $i . " ";
+//     $i++;
+// }
+
+
+
+
+
+for ($i=1; $i < 101; $i++) { 
+if ($i % 15 == 0){
+        echo("CHARIZARD\n");
+} elseif($i % 5 == 0) {
+        echo("ZARD\n");
+} elseif($i % 3 == 0) {
+        echo("CHARI\n");
+    } else {
+        echo($i . "\n");
+    }
+    
+}
 
